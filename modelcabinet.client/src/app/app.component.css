@@ -1,0 +1,55 @@
+/* 1) Footer Container */
+.footer-custom {
+  background-color: #003366; /* Dark blue */
+  color: #fff; /* White text */
+  padding: 20px 0; /* Top & bottom spacing */
+}
+
+  /* 2) Footer Logo */
+  .footer-custom .footer-logo {
+    max-width: 180px;
+    height: auto;
+  }
+
+  /* 3) Links (e.g., Quick Links, Email) */
+  .footer-custom a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+    .footer-custom a:hover {
+      text-decoration: underline;
+    }
+
+  /* 4) Footer Headings */
+  .footer-custom h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+
+  /* 5) Override default list style for Quick Links if needed */
+  .footer-custom .footer-links ul {
+    padding-left: 0;
+  }
+
+  .footer-custom .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* 6) Spacing & alignment for columns (if desired) */
+  .footer-custom .row > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* 7) Social Icons */
+  .footer-custom .bi {
+    color: #fff; /* Ensure icons are white */
+  }
+
+    .footer-custom .bi:hover {
+      color: #ddd; /* Slight change on hover */
+    }

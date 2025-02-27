@@ -1,2 +1,204 @@
-<app-nav-bar></app-nav-bar>
+<!--<app-nav-bar></app-nav-bar>-->
+<!-- Search Bar -->
+<!--<div class="search-bar container my-3">
+  <form (submit)="onSearch()">
+    <div class="input-group">
+      <input type="text"
+             class="form-control"
+             placeholder="Search..."
+             [(ngModel)]="searchTerm"
+             name="searchTerm" />
+      <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+  </form>
+</div>
+
+<router-outlet></router-outlet>-->
+<!-- Footer Banner (always visible on all screen sizes) -->
+<!--<div class="footer-banner" (click)="toggleFooter()">
+  Click here to view the footer
+</div>-->
+<!-- Footer Section -->
+<!--<footer class="footer" [class.hidden]="!isFooterVisible">
+  <div class="footer-top">-->
+<!-- Example row with a logo/heading on the left and some text or testimonials on the right -->
+<!--<div class="row align-items-center">
+  <div class="col-md-3 text-center text-md-start">-->
+<!-- Replace with your own logo or text -->
+<!--<img src="assets/logos/centralia-college.png"
+           alt="Centralia College"
+           class="footer-logo" />
+    </div>
+    <div class="col-md-9 text-center text-md-start">
+      <h2 class="footer-heading">Testimonials</h2>
+      <p class="testimonial-text">
+        “This is the text, whatever you think you can do, you can do it.
+        You’re really the only person who can limit what you can do.”
+      </p>
+      <p class="testimonial-author">
+        <strong>CHAI LEET</strong><br />
+        Bachelor of Applied Science: Applied Management
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr class="footer-divider" />
+
+<div class="footer-middle">-->
+<!-- Example row with contact info or quick links, etc. -->
+<!--<div class="row">
+    <div class="col-md-4">
+      <h5>Contact</h5>
+      <p>1234 Model Cabinet Way<br />Anywhere, USA 12345</p>
+      <p>Email: info@modelcabinet.com</p>
+      <p>Phone: (555) 123-4567</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Quick Links</h5>
+      <ul class="list-unstyled">
+        <li><a href="#">Student Portal</a></li>
+        <li><a href="#">MyCC Login</a></li>
+        <li><a href="#">Canvas</a></li>
+        <li><a href="#">ModelCabinet FAQ</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5>Resources</h5>
+      <ul class="list-unstyled">
+        <li><a href="#">Download STL</a></li>
+        <li><a href="#">Upload STL</a></li>
+        <li><a href="#">Browse Models</a></li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="footer-divider" />
+
+<div class="footer-bottom">-->
+<!-- Bottom row with logos or disclaimers -->
+<!--<div class="row align-items-center">
+  <div class="col-md-6 text-center text-md-start">
+    <p class="mb-0">
+      &copy; 2025 Model Cabinet. All Rights Reserved.
+    </p>
+  </div>
+  <div class="col-md-6 text-center text-md-end">-->
+<!-- Example of inline logos or icons -->
+<!--<img src="assets/logos/github.png" alt="GitHub" class="footer-icon" />
+        <img src="assets/logos/microsoft-teams.png" alt="Microsoft Teams" class="footer-icon" />
+        <img src="assets/logos/centralia-college.png" alt="Centralia College" class="footer-icon" />
+        <img src="assets/logos/tree.png" alt="Tree Logo" class="footer-icon" />
+        <img src="assets/logos/angular.png" alt="Angular" class="footer-icon" />
+        <img src="assets/logos/css.png" alt="CSS" class="footer-icon" />
+        <img src="assets/logos/html.png" alt="HTML" class="footer-icon" />
+        <img src="assets/logos/nodejs.png" alt="Node.js" class="footer-icon" />
+      </div>
+    </div>
+  </div>
+</footer>-->
+<!-- Example Nav Bar (could be a separate component, but here for simplicity) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">ModelCabinet</a>
+    <!-- Search Form -->
+    <form class="d-flex" (submit)="onSearch()">
+      <input class="form-control me-2"
+             type="text"
+             placeholder="Search..."
+             [(ngModel)]="searchTerm"
+             name="searchTerm" />
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>
+
+<!-- Footer Banner (always visible on all screen sizes) -->
+<div class="footer-banner" (click)="toggleFooter()">
+  Click here to view the footer
+</div>
+
+<!-- Footer Section -->
+<footer class="footer" [class.hidden]="!isFooterVisible">
+  <div class="footer-top">
+    <div class="row align-items-center">
+      <div class="col-md-3 text-center text-md-start">
+        <!-- Replace with your own logo or text -->
+        <img src="assets/logos/centralia-college.png"
+             alt="Centralia College"
+             class="footer-logo" />
+      </div>
+      <div class="col-md-9 text-center text-md-start">
+        <h2 class="footer-heading">Testimonials</h2>
+        <p class="testimonial-text">
+          “This is the text, whatever you think you can do, you can do it.
+          You’re really the only person who can limit what you can do.”
+        </p>
+        <p class="testimonial-author">
+          <strong>CHAI LEET</strong><br />
+          Bachelor of Applied Science: Applied Management
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-middle">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p>1234 Model Cabinet Way<br />Anywhere, USA 12345</p>
+        <p>Email: info@modelcabinet.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Student Portal</a></li>
+          <li><a href="#">MyCC Login</a></li>
+          <li><a href="#">Canvas</a></li>
+          <li><a href="#">ModelCabinet FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Download STL</a></li>
+          <li><a href="#">Upload STL</a></li>
+          <li><a href="#">Browse Models</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">&copy; 2025 Model Cabinet. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <!-- Example of inline logos or icons -->
+        <img src="assets/logos/github.png" alt="GitHub" class="footer-icon" />
+        <img src="assets/logos/microsoft-teams.png"
+             alt="Microsoft Teams"
+             class="footer-icon" />
+        <img src="assets/logos/centralia-college.png"
+             alt="Centralia College"
+             class="footer-icon" />
+        <img src="assets/logos/tree.png" alt="Tree Logo" class="footer-icon" />
+        <img src="assets/logos/angular.png" alt="Angular" class="footer-icon" />
+        <img src="assets/logos/css.png" alt="CSS" class="footer-icon" />
+        <img src="assets/logos/html.png" alt="HTML" class="footer-icon" />
+        <img src="assets/logos/nodejs.png" alt="Node.js" class="footer-icon" />
+      </div>
+    </div>
+  </div>
+</footer>

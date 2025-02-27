@@ -1,18 +1,27 @@
-import { Component } from '@angular/core';
-import { Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'; // <-- IMPORTANT
+import { AuthService } from './services/auth.service'; // or correct path
 
 @Component({
-  selector: 'app-coming-soon',
-  templateUrl: './coming-soon.component.html',
-  styleUrl: './coming-soon.component.css'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class ComingSoonComponent {
+export class AppComponent implements OnInit {
+  searchTerm: string = '';
+  isFooterVisible: boolean = false;
 
-  constructor(private location: Location) {
-   
+  constructor(private authService: AuthService, private router: Router) { }
+
+  ngOnInit() {
+    this.authService.loadCurrentUser().subscribe();
   }
 
-  goBack(): void {
-    this.location.back();
+  onSearch() {
+    this.router.navigate(['/coming-soon'], { queryParams: { q: this.searchTerm || '' } });
+  }
+
+  toggleFooter() {
+    this.isFooterVisible = !this.isFooterVisible;
   }
 }
